@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/resources/css/main.css" id="main-css">
+    <!-- <link rel="shortcut icon" href="./src/resources/icons/logo.png" type="image/x-icon"> -->
+    <script defer src="./src/resources/js/sidebar.js"></script>
+    <script defer src="./src/resources/js/flags.js"></script>
+    <title>FIFA World Cup 2022</title>
+</head>
+
+<body>
+    <img src="./src/resources/icons/logo.png" alt="logo" id="logo" class="logo" draggable="false">
+    <header>
+        <nav>
+            <button id="side_menu_toggle" class="side_menu_toggle" title="Toogle Side menu">
+                <img src="./src/resources/icons/menu.png" alt="menu icon" draggable="false">
+            </button>
+            <div id="searchbar" class="searchbar">
+                <img src="./src/resources/icons/search-normal.png" alt="search icon" draggable="false">
+                <input type="text" name="search" id="searchbar_input" class="searchbar_input" title="Search"
+                    placeholder="Search" spellcheck="false">
+            </div>
+            <div id="options" class="options">
+                <div id="language" class="language">
+                    <label for="lang_select"><img src="./src/resources/icons/global.png" alt="global icon"></label>
+                    <select name="lang" id="lang_select" title="Select Language" spellcheck="false">
+                        <option value="en">AR</option>
+                        <option value="en" selected="true">EN</option>
+                    </select>
+                    <label for="lang_select"><img src="./src/resources/icons/arrow-down.png"
+                            alt="arrow down icon"></label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="main_section" class="main_section">
+        <section id="left_section" class="left_section sidebar">
+            <div id="selector" class="home"></div>
+            <ul id="links" class="links">
+                <li id="home_li" class="selected">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="home">
+                            <path id="Vector"
+                                d="M20.04 6.82L14.28 2.79C12.71 1.69 10.3 1.75 8.78999 2.92L3.77999 6.83C2.77999 7.61 1.98999 9.21 1.98999 10.47V17.37C1.98999 19.92 4.05999 22 6.60999 22H17.39C19.94 22 22.01 19.93 22.01 17.38V10.6C22.01 9.25 21.14 7.59 20.04 6.82ZM12.75 18C12.75 18.41 12.41 18.75 12 18.75C11.59 18.75 11.25 18.41 11.25 18V15C11.25 14.59 11.59 14.25 12 14.25C12.41 14.25 12.75 14.59 12.75 15V18Z"
+                                fill="#AF375D" />
+                        </g>
+                    </svg>
+                </li>
+                <li id="schedule_li" class="">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="schedule">
+                            <path id="Vector"
+                                d="M14.35 2H9.65001C8.61001 2 7.76001 2.84 7.76001 3.88V4.82C7.76001 5.86 8.60001 6.7 9.64001 6.7H14.35C15.39 6.7 16.23 5.86 16.23 4.82V3.88C16.24 2.84 15.39 2 14.35 2Z"
+                                fill="#C5C5C5" />
+                            <path id="Vector_2"
+                                d="M17.24 4.82001C17.24 6.41001 15.94 7.71001 14.35 7.71001H9.64998C8.05998 7.71001 6.75998 6.41001 6.75998 4.82001C6.75998 4.26001 6.15998 3.91001 5.65998 4.17001C4.24998 4.92001 3.28998 6.41001 3.28998 8.12001V17.53C3.28998 19.99 5.29998 22 7.75998 22H16.24C18.7 22 20.71 19.99 20.71 17.53V8.12001C20.71 6.41001 19.75 4.92001 18.34 4.17001C17.84 3.91001 17.24 4.26001 17.24 4.82001ZM12.38 16.95H7.99998C7.58998 16.95 7.24998 16.61 7.24998 16.2C7.24998 15.79 7.58998 15.45 7.99998 15.45H12.38C12.79 15.45 13.13 15.79 13.13 16.2C13.13 16.61 12.79 16.95 12.38 16.95ZM15 12.95H7.99998C7.58998 12.95 7.24998 12.61 7.24998 12.2C7.24998 11.79 7.58998 11.45 7.99998 11.45H15C15.41 11.45 15.75 11.79 15.75 12.2C15.75 12.61 15.41 12.95 15 12.95Z"
+                                fill="#C5C5C5" />
+                        </g>
+                    </svg>
+                </li>
+                <li id="video_li" class="">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="video">
+                            <path id="Vector"
+                                d="M21.15 6.17C20.74 5.95 19.88 5.72 18.71 6.54L17.24 7.58C17.13 4.47 15.78 3.25 12.5 3.25H6.5C3.08 3.25 1.75 4.58 1.75 8V16C1.75 18.3 3 20.75 6.5 20.75H12.5C15.78 20.75 17.13 19.53 17.24 16.42L18.71 17.46C19.33 17.9 19.87 18.04 20.3 18.04C20.67 18.04 20.96 17.93 21.15 17.83C21.56 17.62 22.25 17.05 22.25 15.62V8.38C22.25 6.95 21.56 6.38 21.15 6.17ZM11 11.38C9.97 11.38 9.12 10.54 9.12 9.5C9.12 8.46 9.97 7.62 11 7.62C12.03 7.62 12.88 8.46 12.88 9.5C12.88 10.54 12.03 11.38 11 11.38Z"
+                                fill="#C5C5C5" />
+                        </g>
+                    </svg>
+                </li>
+                <li id="cup_li" class="">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="cup">
+                            <path id="Vector"
+                                d="M11.25 18.25H9C7.9 18.25 7 19.15 7 20.25V20.5H6C5.59 20.5 5.25 20.84 5.25 21.25C5.25 21.66 5.59 22 6 22H18C18.41 22 18.75 21.66 18.75 21.25C18.75 20.84 18.41 20.5 18 20.5H17V20.25C17 19.15 16.1 18.25 15 18.25H12.75V15.96C12.5 15.99 12.25 16 12 16C11.75 16 11.5 15.99 11.25 15.96V18.25Z"
+                                fill="#C5C5C5" />
+                            <path id="Vector_2"
+                                d="M18.48 11.64C19.14 11.39 19.72 10.98 20.18 10.52C21.11 9.49 21.72 8.26 21.72 6.82C21.72 5.38 20.59 4.25 19.15 4.25H18.59C17.94 2.92 16.58 2 15 2H9.00003C7.42003 2 6.06003 2.92 5.41003 4.25H4.85003C3.41003 4.25 2.28003 5.38 2.28003 6.82C2.28003 8.26 2.89003 9.49 3.82003 10.52C4.28003 10.98 4.86003 11.39 5.52003 11.64C6.56003 14.2 9.06003 16 12 16C14.94 16 17.44 14.2 18.48 11.64ZM14.84 8.45L14.22 9.21C14.12 9.32 14.05 9.54 14.06 9.69L14.12 10.67C14.16 11.27 13.73 11.58 13.17 11.36L12.26 11C12.12 10.95 11.88 10.95 11.74 11L10.83 11.36C10.27 11.58 9.84003 11.27 9.88003 10.67L9.94003 9.69C9.95003 9.54 9.88003 9.32 9.78003 9.21L9.16003 8.45C8.77003 7.99 8.94003 7.48 9.52003 7.33L10.47 7.09C10.62 7.05 10.8 6.91 10.88 6.78L11.41 5.96C11.74 5.45 12.26 5.45 12.59 5.96L13.12 6.78C13.2 6.91 13.38 7.05 13.53 7.09L14.48 7.33C15.06 7.48 15.23 7.99 14.84 8.45Z"
+                                fill="#C5C5C5" />
+                        </g>
+                    </svg>
+                </li>
+            </ul>
+        </section>
+        <section id="middle_section" class="middle_section">
+            <iframe src="./src/resources/html/homepage.html" frameborder="0"></iframe>
+        </section>
+        <section id="right_section" class="right_section sidebar">
+            <div id="flags" class="flags">
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div id="footer_links" class="footer_links">
+            <a href="#" draggable="false">Accessibility</a>
+            <a href="#" draggable="false">Terms of use</a>
+            <a href="#" draggable="false">Privacy Policy</a>
+            <a href="#" draggable="false">Cookie Policy</a>
+            <a href="#" draggable="false">API</a>
+            <a href="#" draggable="false">Help</a>
+            <a href="#" draggable="false">Contact Us</a>
+        </div>
+        <img src="./src/resources/img/footer-logo.png" alt="Logo" id="footer_logo" class="footer_logo"
+            draggable="false"></img>
+    </footer>
+</body>
+
+</html>
+
+<!-- أنا هعمل الجزئ الأوسط الرئيسي بـ iframe
+عشان أعمل التنقل -->
