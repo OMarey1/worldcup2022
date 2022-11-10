@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/resources/css/theme.css" id="theme-css">
+    <link rel="stylesheet" href="./src/resources/css/spiner.css" id="spiner-css">
     <link rel="stylesheet" href="./src/resources/css/main.css" id="main-css">
-    <!-- <link rel="shortcut icon" href="./src/resources/icons/logo.png" type="image/x-icon"> -->
+    <script defer src="./src/resources/js/loader.js"></script>
     <script defer src="./src/resources/js/sidebar.js"></script>
     <script defer src="./src/resources/js/flags.js"></script>
+    <script defer src="./src/resources/js/color_theme.js"></script>
     <title>FIFA World Cup 2022</title>
 </head>
 
-<body>
+<body class="light" link="#333">
+    <script src="./src/resources/js/set_theme_at_loading.js"></script>
+
+    <div id="highestElement" style="display: none;"></div>
+
+    <div id="loader" class="loaders">
+        <div id="spiner_bar" class="spiners_bar">
+            <div id="spiner" class="spiners"></div>
+        </div>
+    </div>
+
     <img src="./src/resources/icons/logo.png" alt="logo" id="logo" class="logo" draggable="false">
     <header>
         <nav>
@@ -25,14 +38,18 @@
                     placeholder="Search" spellcheck="false">
             </div>
             <div id="options" class="options">
+                <div id="color_theme" class="color_theme">
+                    <img src="./src/resources/icons/moon.png" alt="moon icon" draggable="false">
+                </div>
                 <div id="language" class="language">
-                    <label for="lang_select"><img src="./src/resources/icons/global.png" alt="global icon"></label>
+                    <label for="lang_select"><img src="./src/resources/icons/global.png" alt="global icon"
+                            draggable="false"></label>
                     <select name="lang" id="lang_select" title="Select Language" spellcheck="false">
-                        <option value="en">AR</option>
+                        <option value="ar">AR</option>
                         <option value="en" selected="true">EN</option>
                     </select>
-                    <label for="lang_select"><img src="./src/resources/icons/arrow-down.png"
-                            alt="arrow down icon"></label>
+                    <label for="lang_select"><img src="./src/resources/icons/arrow-down.png" alt="arrow down icon"
+                            draggable="false"></label>
                 </div>
             </div>
         </nav>
@@ -86,7 +103,7 @@
             </ul>
         </section>
         <main id="middle_section" class="middle_section">
-            <iframe src="./src/resources/html/homepage.html" frameborder="0"></iframe>
+            <iframe id="main_iframe" src="./src/resources/html/home.html" frameborder="0" lang="en"></iframe>
         </main>
         <section id="right_section" class="right_section sidebar">
             <div id="flags" class="flags">

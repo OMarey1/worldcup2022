@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/theme.css" id="iframe-theme-css">
+    <link rel="stylesheet" href="../css/spiner.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/homepage.css">
+    <script defer src="../js/iframe_loader.js"></script>
+    <script defer src="../js/clock.js"></script>
+    <script defer src="../js/slider.js" type="module"></script>
+    <title>Home</title>
+</head>
+</head>
+
+<body class="light">
+    <script src="../js/set_theme_at_loading.js"></script>
+
+    <div id="highestElement" style="display: none;"></div>
+
+    <div id="loader" class="loaders" style="min-width: 100%;">
+        <div id="spiner_bar" class="spiners_bar">
+            <div id="spiner" class="spiners"></div>
+        </div>
+    </div>
+
+    <section id="left_section" class="left_section">
+        <section id="topLeft_section" class="topLeft_section">
+            <h1>Featured</h1>
+            <div class="slider swiper">
+                <div id="slider_wrapper" class="swiper-wrapper">
+                    <div id="slide1" class="slide swiper-slide">
+                        <picture>
+                            <source srcset="../img/bg.avif" type="image/avif">
+                            <source srcset="../img/bg.webp" type="image/webp">
+                            <img src="../img/bg.png" alt="" class="bg">
+                        </picture>
+                        <div class="slide_left_content">
+                            <h2>Plan your FIFA World Cup<br> Qatar 2022™ experience</h2>
+                            <p>Fans can visit the mall locations in Saudi Arabia, UAE, Kuwait and Qatar below for
+                                information on Tickets,
+                                Accommodation, Hayya Card and the tournament experience.</p>
+                            <a href="#" draggable="false">Read more</a>
+                        </div>
+                        <div class="slide_right_content">
+                        </div>
+                    </div>
+                    <div id="slide2" class="slide swiper-slide">
+                        <picture>
+                            <source srcset="../img/bg.avif" type="image/avif">
+                            <source srcset="../img/bg.webp" type="image/webp">
+                            <img src="../img/bg.png" alt="" class="bg">
+                        </picture>
+                        <div class="slide_left_content">
+                            <h2>Slide 2</h2>
+                            <p>This is the discription of the slide</p>
+                            <a href="#" draggable="false">Read more</a>
+                        </div>
+                        <div class="slide_right_content"></div>
+                    </div>
+                    <div id="slide3" class="slide swiper-slide">
+                        <picture>
+                            <source srcset="../img/bg.avif" type="image/avif">
+                            <source srcset="../img/bg.webp" type="image/webp">
+                            <img src="../img/bg.png" alt="" class="bg">
+                        </picture>
+                        <div class="slide_left_content">
+                            <h2>Slide 3</h2>
+                            <p>This is the discription of the slide</p>
+                            <a href="#" draggable="false">Read more</a>
+                        </div>
+                        <div class="slide_right_content"></div>
+                    </div>
+                </div>
+                <div class="btn_next slider_btns swiper-button-next"></div>
+                <div class="btn_prev slider_btns swiper-button-prev"></div>
+            </div>
+            <div class="pagination swiper-pagination"></div>
+        </section>
+        <section id="bottomLeft_section" class="bottomLeft_section">
+            <h1>Matches Schedule</h1>
+            <div id="matchesScheduleContainer" class="matchesScheduleContainer">
+                <div id="match_slice1" class="match_slice">
+                    <div class="slice_left">
+                        <p>Group A • Matchday 1 of 3</p>
+                    </div>
+                    <div class="slice_middle">
+                        <div class="left">
+                            <h3>Qatar</h3>
+                            <picture>
+                                <source srcset="../flags/qatar.webp" type="image/webp">
+                                <img src="../flags/qatar.png" alt="" draggable="false">
+                            </picture>
+                        </div>
+                        <div class="middle">
+                            <span>Nov 20</span>
+                            <span>16:00</span>
+                        </div>
+                        <div class="right">
+                            <picture>
+                                <source srcset="../flags/ecuador.webp" type="image/webp">
+                                <img src="../flags/ecuador.png" alt="" draggable="false">
+                            </picture>
+                            <h3>Ecuador</h3>
+                        </div>
+                    </div>
+                    <div class="slice_right">
+                        <p>Stadium: <a href="./stadiums/al-bayt.html" target="_parent" draggable="false">Al Bayt</a></p>
+                    </div>
+                </div>
+                <div id="match_slice2" class="match_slice">
+                    <div class="slice_left">
+                        <p>Group B • Matchday 1 of 3</p>
+                    </div>
+                    <div class="slice_middle">
+                        <div class="left">
+                            <h3>England</h3>
+                            <picture>
+                                <source srcset="../flags/england.webp" type="image/webp">
+                                <img src="../flags/england.png" alt="" draggable="false">
+                            </picture>
+                        </div>
+                        <div class="middle">
+                            <span>Nov 21</span>
+                            <span>12:00</span>
+                        </div>
+                        <div class="right">
+                            <picture>
+                                <source srcset="../flags/iran.webp" type="image/webp">
+                                <img src="../flags/iran.png" alt="" draggable="false">
+                            </picture>
+                            <h3>Iran</h3>
+                        </div>
+                    </div>
+                    <div class="slice_right">
+                        <p>Stadium: <a href="#" target="_parent" draggable="false">Khalifa International</a></p>
+                    </div>
+                </div>
+                <div id="match_slice3" class="match_slice">
+                    <div class="slice_left">
+                        <p>Group A • Matchday 1 of 3</p>
+                    </div>
+                    <div class="slice_middle">
+                        <div class="left">
+                            <h3>Senegal</h3>
+                            <picture>
+                                <source srcset="../flags/senegal.webp" type="image/webp">
+                                <img src="../flags/senegal.png" alt="" draggable="false">
+                            </picture>
+                        </div>
+                        <div class="middle">
+                            <span>Nov 21</span>
+                            <span>16:00</span>
+                        </div>
+                        <div class="right">
+                            <picture>
+                                <source srcset="../flags/netherlands.webp" type="image/webp">
+                                <img src="../flags/netherlands.png" alt="" draggable="false">
+                            </picture>
+                            <h3>Netherlands</h3>
+                        </div>
+                    </div>
+                    <div class="slice_right">
+                        <p>Stadium: <a href="#" target="_parent" draggable="false">Al Thumama</a></p>
+                    </div>
+                </div>
+                <div id="match_slice4" class="match_slice">
+                    <div class="slice_left">
+                        <p>Group B • Matchday 1 of 3</p>
+                    </div>
+                    <div class="slice_middle">
+                        <div class="left">
+                            <h3>USA</h3>
+                            <picture>
+                                <source srcset="../flags/usa.webp" type="image/webp">
+                                <img src="../flags/usa.png" alt="" draggable="false">
+                            </picture>
+                        </div>
+                        <div class="middle">
+                            <span>Nov 21</span>
+                            <span>19:00</span>
+                        </div>
+                        <div class="right">
+                            <picture>
+                                <source srcset="../flags/wales.webp" type="image/webp">
+                                <img src="../flags/wales.png" alt="" draggable="false">
+                            </picture>
+                            <h3>Wales</h3>
+                        </div>
+                    </div>
+                    <div class="slice_right">
+                        <p>Stadium: <a href="#" target="_parent" draggable="false">Al Rayyan</a></p>
+                    </div>
+                </div>
+                <div id="match_slice5" class="match_slice">
+                    <div class="slice_left">
+                        <p>Group C • Matchday 1 of 3</p>
+                    </div>
+                    <div class="slice_middle">
+                        <div class="left">
+                            <h3>Argentina</h3>
+                            <picture>
+                                <source srcset="../flags/argentina.webp" type="image/webp">
+                                <img src="../flags/argentina.png" alt="" draggable="false">
+                            </picture>
+                        </div>
+                        <div class="middle">
+                            <span>Nov 22</span>
+                            <span>22:00</span>
+                        </div>
+                        <div class="right">
+                            <picture>
+                                <source srcset="../flags/saudi-arabia.webp" type="image/webp">
+                                <img src="../flags/saudi-arabia.png" alt="" draggable="false">
+                            </picture>
+                            <h3>Saudi Arabia</h3>
+                        </div>
+                    </div>
+                    <div class="slice_right">
+                        <p>Stadium: <a href="#" target="_parent" draggable="false">Lusail</a></p>
+                    </div>
+                </div>
+            </div>
+            <h2><a href="#" draggable="false">View All <img src="../icons/export.png" alt="" draggable="false"></a></h2>
+        </section>
+    </section>
+    <section id="right_section" class="right_section">
+        <div id="countdown" class="countdown">
+            <h1>Now is All™</h1>
+            <h3>Countdown to Qatar 2022</h3>
+            <div id="clock">
+                <div id="days" class="clock_hand">
+                    <span id="day">19</span>
+                    <span class="unit">Days</span>
+                </div>
+                <div id="hours" class="clock_hand">
+                    <span id="hour">25</span>
+                    <span class="unit">Hours</span>
+                </div>
+                <div id="mins" class="clock_hand">
+                    <span id="min">03</span>
+                    <span class="unit">Mins</span>
+                </div>
+            </div>
+        </div>
+        <div id="recent_news" class="recent_news">
+            <h1 class="recent_news_title">Recent news</h1>
+            <div id="news1" class="news">
+                <picture>
+                    <source srcset="../img/event-1.avif" type="image/avif">
+                    <source srcset="../img/event-1-.webp" type="image/webp">
+                    <img class="news_img" src="../img/event-1.webp" alt="" draggable="false" loading="eager">
+                </picture>
+                <span class="news_date">Sep 26, 2022</span>
+                <h2 class="news_title">Nothing beats being here!</h2>
+                <h3 class="news_desc">Entertainment destinations, mega attractions, cultural discoveries, endless
+                    adventures and much more.</h3>
+            </div>
+            <div id="news2" class="news">
+                <picture>
+                    <source srcset="../img/Lusail-Stadium-1.avif" type="image/avif">
+                    <source srcset="../img/Lusail-Stadium-1.webp" type="image/webp">
+                    <img class="news_img" src="../img/Lusail-Stadium-1.jpg" alt="" draggable="false" loading="eager">
+                </picture>
+                <span class="news_date">Oct 13, 2022</span>
+                <h2 class="news_title">Prepare to be amazed</h2>
+                <h3 class="news_desc">Our eight spectacular FIFA World Cup Qatar 2022™ stadiums are ready to welcome the
+                    world.</h3>
+            </div>
+            <a id="view_news_btn" class="view_news_btn" href="#" draggable="false" style="opacity: 0;"><span>View
+                    All</span> <img src="../icons/export.png" alt="" draggable="false"></a>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+<!-- (.slide_left_content>(h2+p+a))+.slide_right_content -->
+<!-- <div class="slide_left_content">
+    <h2></h2>
+    <p></p>
+    <a href="" draggable="false"></a>
+</div>
+<div class="slide_right_content"></div> -->

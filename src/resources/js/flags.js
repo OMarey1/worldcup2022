@@ -8,11 +8,20 @@ FLAGS.forEach(flag => {
     flagLink.id = `${flag}`;
     flagLink.draggable = false;
 
+    let flagPicture = document.createElement("picture");
+
+    let webpSource = document.createElement("source");
+    webpSource.setAttribute("srcset", `./src/resources/flags/${flag}.webp`);
+    webpSource.setAttribute("type", "image/webp");
+
     let flagImg = document.createElement("img");
     flagImg.src = `./src/resources/flags/${flag}.png`;
     flagImg.alt = `${flag} flag`;
     flagImg.draggable = false;
+    flagImg.loading = "lazy";
 
-    flagLink.appendChild(flagImg);
+    flagPicture.appendChild(webpSource);
+    flagPicture.appendChild(flagImg);
+    flagLink.appendChild(flagPicture);
     flagsContainer.appendChild(flagLink);
 });

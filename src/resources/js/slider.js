@@ -1,4 +1,5 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+import Swiper from './swiper-bundle.esm.browser.min.js'
 
 const slider_wrapper = document.getElementById("slider_wrapper");
 
@@ -32,6 +33,17 @@ function createNewSlide(title, paragraph, link, btnText) {
     slide.classList.add("slide");
     slide.classList.add("swiper-slide");
 
+    let picture = document.createElement("picture");
+
+    let avifSource = document.createElement("source");
+    avifSource.setAttribute("srcset", "../img/bg.avif");
+    avifSource.setAttribute("type", "image/avif");
+
+    let webpSource = document.createElement("source");
+    webpSource.setAttribute("srcset", "../img/bg.webp");
+    webpSource.setAttribute("type", "image/webp");
+
+
     let img = document.createElement("img");
     img.src = "../img/bg.png"
     img.classList.add("bg");
@@ -53,8 +65,10 @@ function createNewSlide(title, paragraph, link, btnText) {
     a.draggable = false;
     a.textContent = btnText
 
-
-    slide.appendChild(img);
+    picture.appendChild(avifSource);
+    picture.appendChild(webpSource);
+    picture.appendChild(img);
+    slide.appendChild(picture);
     slide_left_content.appendChild(h2);
     slide_left_content.appendChild(p);
     slide_left_content.appendChild(a);
