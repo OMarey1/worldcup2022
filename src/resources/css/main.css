@@ -438,3 +438,47 @@ section#main_section #middle_section iframe {
     user-select: none;
     -webkit-user-drag: none;
 }
+
+
+
+/* By DeepSeek */
+/* Existing header nav styles - Make searchbar responsive */
+header nav #searchbar {
+    width: 40%;
+    min-width: 300px;
+}
+
+/* Middle section responsiveness */
+section#main_section #middle_section {
+    width: calc(100% - 200px);
+    height: calc(100vh - 150px);
+    margin: 75px 100px;
+}
+
+@media (max-width: 1024px) {
+    section#main_section #middle_section {
+        width: calc(100% - 150px);
+        margin: 75px 50px;
+    }
+
+    header {
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    section#main_section #left_section.sidebar,
+    section#main_section #right_section.sidebar {
+        display: none;
+    }
+
+    section#main_section #middle_section {
+        width: 100%;
+        margin: 75px 0;
+    }
+
+    header nav #searchbar {
+        width: 60%;
+        min-width: 200px;
+    }
+}

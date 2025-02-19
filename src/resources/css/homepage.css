@@ -598,3 +598,66 @@ section#right_section #recent_news a.view_news_btn span {
 section#right_section #recent_news a.view_news_btn img {
     filter: brightness(0%) invert(100%);
 }
+
+/* By DeepSeek */
+/* Responsive Adjustments */
+@media (max-width: 1440px) {
+    body {
+        gap: 100px;
+        padding: 16px 24px 24px 26px;
+    }
+
+    section#left_section {
+        width: 60%;
+    }
+
+    section#right_section {
+        width: 35%;
+        min-width: unset;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        gap: 40px;
+        overflow-y: auto;
+    }
+
+    section#left_section,
+    section#right_section {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+        section#right_section #recent_news .news {
+            width: 100%;
+        }
+
+        section#left_section #bottomLeft_section #matchesScheduleContainer .match_slice {
+            padding: 0 30px;
+        }
+}
+
+@media (max-width: 768px) {
+    section#left_section #topLeft_section .slider .slide .slide_left_content {
+        padding: 40px 20px;
+    }
+
+    section#left_section #bottomLeft_section #matchesScheduleContainer .match_slice {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .match_slice > div {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .slice_middle {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+}
