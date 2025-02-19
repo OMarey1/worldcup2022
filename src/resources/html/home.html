@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="../css/theme.css" id="iframe-theme-css">
-    <link rel="stylesheet" href="../css/spiner.css">
+    <!-- <link rel="stylesheet" href="../css/spiner.css"> -->
     <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/homepage.css">
+    <!-- <link rel="stylesheet" href="../css/homepage_pending.css"> -->
+    <!-- <link rel="stylesheet" href="../css/homepage_final.css"> -->
     <script defer src="../js/iframe_loader.js"></script>
     <script defer src="../js/clock.js"></script>
     <script defer src="../js/slider.js" type="module"></script>
     <title>Home</title>
-</head>
 </head>
 
 <body class="light">
@@ -31,7 +32,7 @@
     <section id="left_section" class="left_section">
         <section id="topLeft_section" class="topLeft_section">
             <h1>Featured</h1>
-            <div class="slider swiper">
+            <div class="slider swiper" style="overflow: hidden;">
                 <div id="slider_wrapper" class="swiper-wrapper">
                     <div id="slide1" class="slide swiper-slide">
                         <picture>
@@ -49,42 +50,16 @@
                         <div class="slide_right_content">
                         </div>
                     </div>
-                    <div id="slide2" class="slide swiper-slide">
-                        <picture>
-                            <source srcset="../img/bg.avif" type="image/avif">
-                            <source srcset="../img/bg.webp" type="image/webp">
-                            <img src="../img/bg.png" alt="" class="bg">
-                        </picture>
-                        <div class="slide_left_content">
-                            <h2>Slide 2</h2>
-                            <p>This is the discription of the slide</p>
-                            <a href="#" draggable="false">Read more</a>
-                        </div>
-                        <div class="slide_right_content"></div>
-                    </div>
-                    <div id="slide3" class="slide swiper-slide">
-                        <picture>
-                            <source srcset="../img/bg.avif" type="image/avif">
-                            <source srcset="../img/bg.webp" type="image/webp">
-                            <img src="../img/bg.png" alt="" class="bg">
-                        </picture>
-                        <div class="slide_left_content">
-                            <h2>Slide 3</h2>
-                            <p>This is the discription of the slide</p>
-                            <a href="#" draggable="false">Read more</a>
-                        </div>
-                        <div class="slide_right_content"></div>
-                    </div>
                 </div>
-                <div class="btn_next slider_btns swiper-button-next"></div>
-                <div class="btn_prev slider_btns swiper-button-prev"></div>
+                <div class="btn_next slider_btns swiper-button-next" aria-label="Next slide"></div>
+                <div class="btn_prev slider_btns swiper-button-prev" aria-label="Previous slide"></div>
             </div>
             <div class="pagination swiper-pagination"></div>
         </section>
         <section id="bottomLeft_section" class="bottomLeft_section">
             <h1>Matches Schedule</h1>
-            <div id="matchesScheduleContainer" class="matchesScheduleContainer">
-                <div id="match_slice1" class="match_slice">
+            <div id="matchesScheduleContainer" class="matchesScheduleContainer" role="list">
+                <div id="match_slice1" class="match_slice" role="listitem" aria-labelledby="match1">
                     <div class="slice_left">
                         <p>Group A • Matchday 1 of 3</p>
                     </div>
@@ -109,10 +84,11 @@
                         </div>
                     </div>
                     <div class="slice_right">
-                        <p>Stadium: <a href="./stadiums/al-bayt.html" target="_parent" draggable="false">Al Bayt</a></p>
+                        <p>Stadium <a href="./stadiums/al-bayt.html" target="_parent" draggable="false">Al Bayt</a></p>
+
                     </div>
                 </div>
-                <div id="match_slice2" class="match_slice">
+                <div id="match_slice2" class="match_slice" role="listitem" aria-labelledby="match2">
                     <div class="slice_left">
                         <p>Group B • Matchday 1 of 3</p>
                     </div>
@@ -137,10 +113,10 @@
                         </div>
                     </div>
                     <div class="slice_right">
-                        <p>Stadium: <a href="#" target="_parent" draggable="false">Khalifa International</a></p>
+                        <p>Stadium <a href="#" target="_parent" draggable="false">Khalifa International</a></p>
                     </div>
                 </div>
-                <div id="match_slice3" class="match_slice">
+                <div id="match_slice3" class="match_slice" role="listitem" aria-labelledby="match3">
                     <div class="slice_left">
                         <p>Group A • Matchday 1 of 3</p>
                     </div>
@@ -165,10 +141,10 @@
                         </div>
                     </div>
                     <div class="slice_right">
-                        <p>Stadium: <a href="#" target="_parent" draggable="false">Al Thumama</a></p>
+                        <p>Stadium <a href="#" target="_parent" draggable="false">Al Thumama</a></p>
                     </div>
                 </div>
-                <div id="match_slice4" class="match_slice">
+                <div id="match_slice4" class="match_slice" role="listitem" aria-labelledby="match4">
                     <div class="slice_left">
                         <p>Group B • Matchday 1 of 3</p>
                     </div>
@@ -193,10 +169,10 @@
                         </div>
                     </div>
                     <div class="slice_right">
-                        <p>Stadium: <a href="#" target="_parent" draggable="false">Al Rayyan</a></p>
+                        <p>Stadium <a href="#" target="_parent" draggable="false">Al Rayyan</a></p>
                     </div>
                 </div>
-                <div id="match_slice5" class="match_slice">
+                <div id="match_slice5" class="match_slice" role="listitem" aria-labelledby="match5">
                     <div class="slice_left">
                         <p>Group C • Matchday 1 of 3</p>
                     </div>
@@ -221,7 +197,7 @@
                         </div>
                     </div>
                     <div class="slice_right">
-                        <p>Stadium: <a href="#" target="_parent" draggable="false">Lusail</a></p>
+                        <p>Stadium <a href="#" target="_parent" draggable="false">Lusail</a></p>
                     </div>
                 </div>
             </div>
